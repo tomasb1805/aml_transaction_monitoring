@@ -1,0 +1,17 @@
+.env
+.DS_Store
+.vscode
+.idea
+
+__pycache__/
+*.pyc
+*.log
+
+# data is reproducible from Kaggle + the pipeline (raw files ~0.5 GB, database ~1 GB)
+data/raw/
+data/processed/
+data/*.duckdb
+data/*.duckdb.wal
+
+# serialised model artifacts are rebuilt by run_pipeline.py
+models/artifacts/
